@@ -24,7 +24,7 @@ const LocationsSection = () => {
               <StaticImage
                 className="flex items-center justify-center w-20 h-20 rounded-full lg:w-32 lg:h-32"
                 placeholder="blurred"
-                src="../../assets/images/locations/main-langebaan.jpeg"
+                src="../../assets/images/locations/main-langebaan.jpg"
                 alt="Overview of Langebaan"
               />
             </div>
