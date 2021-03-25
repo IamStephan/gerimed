@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://gerimed.co.za/`,
   },
   plugins: [
-    // "gatsby-plugin-preact",
+    "gatsby-plugin-preact",
     "gatsby-plugin-tsconfig-paths",
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
