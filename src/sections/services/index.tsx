@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 const ServicesSection = () => {
   return (
@@ -26,10 +27,17 @@ const ServicesSection = () => {
           <p className="mb-2 text-xl font-bold leading-none sm:text-2xl">
             Frail Care
           </p>
-          <p className="mb-2 text-gray-700">
+          <p className="mb-2 text-gray-700 line-clamp-3">
             Frail care is the care you need when you are no longer able to look
             after yourself because of physical frailty or mental incapacity.
           </p>
+          <Link
+            to="/services/#frail-care"
+            aria-label=""
+            className="inline-flex items-center text-sm font-semibold text-green-600 transition-colors duration-200 hover:text-green-800"
+          >
+            Learn more
+          </Link>
         </div>
         <div className="relative">
           <StaticImage
@@ -44,11 +52,18 @@ const ServicesSection = () => {
           <p className="mb-2 text-xl font-bold leading-none sm:text-2xl">
             Sub-acute Care / Step Down
           </p>
-          <p className="mb-2 text-gray-700">
+          <p className="mb-2 text-gray-700 line-clamp-3">
             Merging the sophisticated technology of a hospital and the
             efficiency of a skilled nursing facility to reduce the cost of
             services while maintaining quality of care.
           </p>
+          <Link
+            to="/services/#step-down"
+            aria-label=""
+            className="inline-flex items-center text-sm font-semibold text-green-600 transition-colors duration-200 hover:text-green-800"
+          >
+            Learn more
+          </Link>
         </div>
         <div>
           <StaticImage
@@ -64,10 +79,17 @@ const ServicesSection = () => {
           <p className="mb-2 text-xl font-bold leading-none sm:text-2xl">
             Assisted Living Apartments
           </p>
-          <p className="mb-2 text-gray-700">
+          <p className="mb-2 text-gray-700 line-clamp-3">
             These apartments are ideal if you want your freedom but still need
             some extra care when needed.
           </p>
+          <Link
+            to="/services/#apartments"
+            aria-label=""
+            className="inline-flex items-center text-sm font-semibold text-green-600 transition-colors duration-200 hover:text-green-800"
+          >
+            Learn more
+          </Link>
         </div>
       </div>
     </section>
