@@ -12,6 +12,7 @@ interface Props {
 
 const Navbar: React.FC<Props> = ({ isHanging }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
   return (
     <nav
@@ -32,10 +33,10 @@ const Navbar: React.FC<Props> = ({ isHanging }) => {
             </Link>
             <ul className="items-center hidden space-x-8 lg:flex">
               <li>
-                <Link
-                  activeClassName="activeLink"
-                  to="/langebaan"
-                  className="relative flex items-center font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-600"
+                <button
+                  onFocus={() => setIsDropdownOpen(true)}
+                  onBlur={() => setIsDropdownOpen(false)}
+                  className="relative flex items-center font-medium tracking-wide text-gray-700 transition-colors duration-200 cursor-pointer hover:text-green-600"
                 >
                   Locations
                   <svg
@@ -45,7 +46,37 @@ const Navbar: React.FC<Props> = ({ isHanging }) => {
                   >
                     <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
                   </svg>
-                </Link>
+                  <div
+                    className={classnames(
+                      "hidden md:block absolute right-0 transform translate-y-full bg-white border rounded shadow-2xl -bottom-4 transition-opacity",
+                      {
+                        "opacity-0": !isDropdownOpen,
+                        "opacity-100": isDropdownOpen,
+                      }
+                    )}
+                  >
+                    <ul className="grid p-4 gap-y-4">
+                      <li>
+                        <Link
+                          activeClassName="activeLink"
+                          to="/langebaan"
+                          className="relative font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-600"
+                        >
+                          Langebaan
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          activeClassName="activeLink"
+                          to="/kleinmond"
+                          className="relative font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-600"
+                        >
+                          Kleinmond
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </button>
               </li>
               <li>
                 <Link
@@ -56,24 +87,6 @@ const Navbar: React.FC<Props> = ({ isHanging }) => {
                   Services
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  activeClassName="activeLink"
-                  to="/langebaan"
-                  className="relative font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-600"
-                >
-                  Langebaan
-                </Link>
-              </li>
-              <li>
-                <Link
-                  activeClassName="activeLink"
-                  to="/kleinmond"
-                  className="relative font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-600"
-                >
-                  Kleinmond
-                </Link>
-              </li> */}
               <li>
                 <Link
                   activeClassName="activeLink"
