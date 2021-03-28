@@ -35,6 +35,31 @@ const Navbar: React.FC<Props> = ({ isHanging }) => {
                 <Link
                   activeClassName="activeLink"
                   to="/langebaan"
+                  className="relative flex items-center font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-600"
+                >
+                  Locations
+                  <svg
+                    className="inline-block w-2 ml-2 transform rotate-90"
+                    fill="currentColor"
+                    viewBox="0 0 12 12"
+                  >
+                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                  </svg>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClassName="activeLink"
+                  to="/services"
+                  className="relative font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-600"
+                >
+                  Services
+                </Link>
+              </li>
+              {/* <li>
+                <Link
+                  activeClassName="activeLink"
+                  to="/langebaan"
                   className="relative font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-600"
                 >
                   Langebaan
@@ -48,7 +73,7 @@ const Navbar: React.FC<Props> = ({ isHanging }) => {
                 >
                   Kleinmond
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   activeClassName="activeLink"
@@ -134,6 +159,15 @@ const Navbar: React.FC<Props> = ({ isHanging }) => {
                           className="relative font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-600"
                         >
                           Kleinmond
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/services"
+                          activeClassName="activeLink"
+                          className="relative font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-600"
+                        >
+                          Services
                         </Link>
                       </li>
                       <li>
