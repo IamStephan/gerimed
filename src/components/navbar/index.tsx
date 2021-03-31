@@ -1,6 +1,7 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import { Link } from "gatsby"
 import classnames from "classnames"
+import { useClickOutside } from "@hooks/useClickOutside"
 
 import MiniLogo from "../../assets/svgs/mini_logo.svg"
 import Logo from "../../assets/svgs/logo.svg"
@@ -13,6 +14,11 @@ interface Props {
 const Navbar: React.FC<Props> = ({ isHanging }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const DropdownRef = useRef(null)
+
+  useClickOutside(DropdownRef, () => {
+    setIsDropdownOpen(false)
+  })
 
   return (
     <nav
@@ -32,10 +38,9 @@ const Navbar: React.FC<Props> = ({ isHanging }) => {
               <MiniLogo className="text-green-800 w-11 h-11" />
             </Link>
             <ul className="items-center hidden space-x-8 lg:flex">
-              <li>
+              <li ref={DropdownRef}>
                 <button
-                  onFocus={() => setIsDropdownOpen(true)}
-                  onBlur={() => setIsDropdownOpen(false)}
+                  onClick={() => setIsDropdownOpen(true)}
                   className="relative flex items-center font-medium tracking-wide text-gray-700 transition-colors duration-200 cursor-pointer hover:text-green-600"
                 >
                   Locations
@@ -50,8 +55,8 @@ const Navbar: React.FC<Props> = ({ isHanging }) => {
                     className={classnames(
                       "hidden md:block absolute right-0 transform translate-y-full bg-white border rounded shadow-2xl -bottom-4 transition-opacity",
                       {
-                        "opacity-0": !isDropdownOpen,
-                        "opacity-100": isDropdownOpen,
+                        "opacity-0 pointer-events-none": !isDropdownOpen,
+                        "opacity-100 pointer-events-auto": isDropdownOpen,
                       }
                     )}
                   >
