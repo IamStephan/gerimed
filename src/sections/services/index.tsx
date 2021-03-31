@@ -33,7 +33,6 @@ const ServicesSection = () => {
           </p>
           <Link
             to="/services/#frail-care"
-            aria-label=""
             className="inline-flex items-center text-sm font-semibold text-green-600 transition-colors duration-200 hover:text-green-800"
           >
             Learn more
@@ -59,7 +58,6 @@ const ServicesSection = () => {
           </p>
           <Link
             to="/services/#step-down"
-            aria-label=""
             className="inline-flex items-center text-sm font-semibold text-green-600 transition-colors duration-200 hover:text-green-800"
           >
             Learn more
@@ -85,7 +83,6 @@ const ServicesSection = () => {
           </p>
           <Link
             to="/services/#apartments"
-            aria-label=""
             className="inline-flex items-center text-sm font-semibold text-green-600 transition-colors duration-200 hover:text-green-800"
           >
             Learn more

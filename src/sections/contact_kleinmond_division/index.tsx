@@ -16,8 +16,8 @@ const ContactKleinmondDivisionSection = () => {
           <Link
             to="/kleinmond"
             className="inline-block mb-5"
-            title="Go to Kleinmond"
-            aria-label="Map pin"
+            title="Kleinmond"
+            aria-label="Kleinmond"
           >
             <div className="flex items-center justify-center w-12 h-12 border rounded-full">
               <svg
@@ -42,9 +42,7 @@ const ContactKleinmondDivisionSection = () => {
             </div>
           </Link>
           <h5 className="mb-8 text-4xl font-extrabold leading-none">
-            Gerimed <span className="inline-block text-red-700">Kleinmond</span>{" "}
-            <br className="hidden md:block" />
-            Kogelpark Clinic
+            Gerimed <span className="inline-block text-red-700">Kleinmond</span>
           </h5>
           <div className="grid gap-8 row-gap-8 lg:grid-cols-2">
             <div className="flex">

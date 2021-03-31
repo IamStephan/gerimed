@@ -8,7 +8,8 @@ const ContactHeaderSection = () => {
       <div className="max-w-screen-sm sm:text-center sm:mx-auto">
         <Link
           to="/"
-          aria-label="View"
+          aria-label="Gerimed"
+          title="Gerimed"
           className="inline-block mb-5 rounded-full sm:mx-auto"
         >
           <div className="flex items-center justify-start w-auto h-auto mb-4 rounded-full md:justify-center">

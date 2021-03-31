@@ -8,7 +8,7 @@ const AboutCTASection = () => {
         <Link
           to="/contact"
           aria-label="Contact us"
-          title="Go to contact"
+          title="Contact us"
           className="inline-block mb-5 rounded-full sm:mx-auto"
         >
           <div className="flex items-center justify-center w-16 h-16 mb-4 border rounded-full">

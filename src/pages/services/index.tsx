@@ -7,7 +7,7 @@ import ServicesApartmentsSection from "@sections/services_apartments"
 
 const ServicesPage = () => {
   return (
-    <Page title="Services" description="">
+    <Page title="Services" description="Gerimed services">
       <ServicesOverviewSection />
       <ServicesFrailCareSection />
       <ServicesStepDownSection />

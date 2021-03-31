@@ -25,7 +25,7 @@ const Navbar: React.FC<Props> = ({ isHanging }) => {
           <div className="flex items-center">
             <Link
               to="/"
-              title="Go Home"
+              title="Gerimed"
               aria-label="Gerimed"
               className="inline-flex items-center mr-8"
             >
@@ -134,7 +134,7 @@ const Navbar: React.FC<Props> = ({ isHanging }) => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-6">
                     <div>
-                      <Link to="/" aria-label="Gerimed" title="Go Home">
+                      <Link to="/" aria-label="Gerimed" title="Gerimed">
                         <Logo className="w-auto max-h-12" />
                       </Link>
                     </div>

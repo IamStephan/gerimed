@@ -9,8 +9,8 @@ const ContactLangebaanDivisionSection = () => {
           <Link
             to="/langebaan"
             className="inline-block mb-5"
-            title="Go to Langebaan"
-            aria-label="Map pin"
+            title="Langebaan"
+            aria-label="Langebaan"
           >
             <div className="flex items-center justify-center w-12 h-12 border rounded-full">
               <svg
@@ -35,8 +35,7 @@ const ContactLangebaanDivisionSection = () => {
             </div>
           </Link>
           <h5 className="mb-4 text-4xl font-extrabold leading-none">
-            Gerimed <br className="hidden md:block" />
-            <span className="inline-block text-red-700">Langebaan</span> cc
+            Gerimed <span className="inline-block text-red-700">Langebaan</span>
           </h5>
           <div className="grid gap-8 row-gap-8 lg:grid-cols-2">
             <div className="flex">

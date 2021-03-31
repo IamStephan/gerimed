@@ -6,7 +6,10 @@ import KleinmondDivisionSection from "@sections/contact_kleinmond_division"
 
 const ContactPage = () => {
   return (
-    <Page title="Contact Us" description="">
+    <Page
+      title="Contact Us"
+      description="Gerimed contact: Kleinmond and Langebaan"
+    >
       <ContactHeaderSection />
       <LangebaanDivisionSection />
       <KleinmondDivisionSection />

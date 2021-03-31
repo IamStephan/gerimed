@@ -6,7 +6,7 @@ import LocationCTAKleinmondSection from "@sections/location_cta_kleinmond"
 
 const KleinmondPage = () => {
   return (
-    <Page title="Kleinmond" description="asd">
+    <Page title="Kleinmond" description="Gerimed location: Kleinmond">
       <LocationHeaderKleinmondSection />
       <LocationCTAKleinmondSection />
       <ContactKleinmondDivisionSection />

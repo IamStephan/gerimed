@@ -8,8 +8,8 @@ const LocationCTAKleinmondSection = () => {
         <Link
           to="/langebaan"
           className="mb-4 mr-8"
-          aria-label="Right arrow"
-          title="Go to Langebaan"
+          aria-label="Langebaan"
+          title="Langebaan"
         >
           <div className="flex items-center justify-center w-16 h-16 mb-4 border rounded-full">
             <svg
@@ -44,7 +44,6 @@ const LocationCTAKleinmondSection = () => {
           </p>
           <Link
             to="/langebaan"
-            aria-label=""
             className="inline-flex items-center text-sm font-semibold text-green-600 transition-colors duration-200 hover:text-green-800"
           >
             Learn more

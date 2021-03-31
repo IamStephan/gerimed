@@ -9,7 +9,7 @@ const CTASection = () => {
         <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
           <Link
             to="/contact"
-            title="Go to contact"
+            title="Contact us"
             aria-label="Contact us"
             className="flex items-center justify-center w-16 h-16 mb-4 bg-white border rounded-full"
           >

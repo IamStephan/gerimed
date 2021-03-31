@@ -31,7 +31,7 @@ const LocationsSection = () => {
             <div className="flex flex-col justify-between flex-grow">
               <div>
                 <h6 className="mb-2 font-semibold leading-5">
-                  Gerimed Langebaan cc
+                  Gerimed Langebaan
                 </h6>
                 <p className="mb-2 text-sm text-gray-900">
                   Aptly referred to as the 'Jewel of the West Coast', the
@@ -41,7 +41,6 @@ const LocationsSection = () => {
               </div>
               <Link
                 to="/langebaan"
-                aria-label=""
                 className="inline-flex items-center text-sm font-semibold text-green-600 transition-colors duration-200 hover:text-green-800"
               >
                 Learn more
@@ -66,7 +65,7 @@ const LocationsSection = () => {
             <div className="flex flex-col justify-between flex-grow">
               <div>
                 <h6 className="mb-2 font-semibold leading-5">
-                  Gerimed Kleinmond Kogelpark Clinic
+                  Gerimed Kleinmond
                 </h6>
                 <p className="mb-2 text-sm text-gray-900">
                   With stunning beaches ideal for walking, swimming as well as
@@ -76,7 +75,6 @@ const LocationsSection = () => {
               </div>
               <Link
                 to="/kleinmond"
-                aria-label=""
                 className="inline-flex items-center text-sm font-semibold text-green-600 transition-colors duration-200 hover:text-green-800"
               >
                 Learn more

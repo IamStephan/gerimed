@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "Gerimed",
     titleTemplate: "%s | Private Elderly Care",
-    description: " ",
+    description:
+      "Gerimed is a privatly owned elderly care business located in Langebaan and Kleinmond",
     siteUrl: `https://gerimed.co.za/`,
   },
   plugins: [

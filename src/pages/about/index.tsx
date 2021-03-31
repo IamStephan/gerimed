@@ -6,7 +6,10 @@ import AboutCTASection from "@sections/about_cta"
 
 const AbouPage = () => {
   return (
-    <Page title="About Us" description="">
+    <Page
+      title="About Us"
+      description="Gerimed is a private elderly care business."
+    >
       <AboutCompanySection />
       <FoundersSection />
       <AboutCTASection />

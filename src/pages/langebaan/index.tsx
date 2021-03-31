@@ -6,7 +6,7 @@ import LocationCTALangebaanSection from "@sections/location_cta_langebaan"
 
 const LangebaanPage = () => {
   return (
-    <Page title="Langebaan" description="asd">
+    <Page title="Langebaan" description="Gerimed location: Langebaan">
       <LocationHeaderLangebaanSection />
       <LocationCTALangebaanSection />
       <ContactLangebaanDivisionSection />
