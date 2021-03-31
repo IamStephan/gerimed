@@ -14,6 +14,13 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#43A047`,
+        showSpinner: true,
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/assets/images/icon.png",
