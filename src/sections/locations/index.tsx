@@ -22,7 +22,7 @@ const LocationsSection = () => {
           <div className="relative flex flex-col h-full p-5 bg-white rounded-sm lg:items-center lg:flex-row">
             <div className="mb-6 mr-6 lg:mb-0">
               <StaticImage
-                className="flex items-center justify-center w-20 h-20 rounded-full lg:w-32 lg:h-32"
+                className="flex items-center justify-center w-20 h-20 overflow-hidden rounded-full lg:w-32 lg:h-32"
                 placeholder="blurred"
                 src="../../assets/images/locations/main-langebaan.jpg"
                 alt="Overview of Langebaan"
@@ -56,7 +56,7 @@ const LocationsSection = () => {
           <div className="relative flex flex-col h-full p-5 bg-white rounded-sm lg:items-center lg:flex-row">
             <div className="mb-6 mr-6 lg:mb-0">
               <StaticImage
-                className="flex items-center justify-center w-20 h-20 rounded-full lg:w-32 lg:h-32"
+                className="flex items-center justify-center w-20 h-20 overflow-hidden rounded-full lg:w-32 lg:h-32"
                 placeholder="blurred"
                 src="../../assets/images/locations/main-kleinmond.jpg"
                 alt="Overview of Kleinmond"

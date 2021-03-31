@@ -9,7 +9,7 @@ const FoundersSection = () => {
           src="../../assets/images/about/founders.png"
           placeholder="blurred"
           alt="Carel and Marisa Pieterse with their son"
-          className="top-0 left-0 w-full h-full"
+          className="top-0 left-0 w-full h-full overflow-hidden rounded-full"
           style={{
             position: "absolute",
           }}
